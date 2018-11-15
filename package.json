@@ -1,0 +1,38 @@
+{
+  "name": "price-scraper",
+  "version": "1.0.0",
+  "description": "quick script to scrape some prices of sites",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node lib/index.js",
+    "build": "babel src/* --out-dir lib",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/moustafab/price-scraper.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Moustafa Baiou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moustafab/price-scraper/issues"
+  },
+  "homepage": "https://github.com/moustafab/price-scraper#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "jsdom": "^13.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.6.0"
+  }
+}

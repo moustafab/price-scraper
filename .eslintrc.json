@@ -1,0 +1,19 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "indent": ["error", 4],
+    "no-console": [0],
+    "no-prototype-builtins": "warn",
+    "no-param-reassign": "warn",
+    "import/no-dynamic-require": [0],
+    "global-require": "warn"
+  },
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "globals": {
+    "expect": true,
+    "google": true
+  }
+}
