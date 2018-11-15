@@ -4,8 +4,11 @@ import {
     DEFAULT_OUTPUT_METHOD,
 } from './input';
 
-PAGE_URLS.forEach(
-    ({
-        url,
-    }) => scraper(url, DEFAULT_OUTPUT_METHOD),
-);
+const instantiateScraper = ({
+    url,
+}) => {
+    console.log(`scrapping: ${url}`);
+    return scraper(url, DEFAULT_OUTPUT_METHOD);
+};
+
+PAGE_URLS.forEach(instantiateScraper);
